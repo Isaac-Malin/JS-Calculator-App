@@ -1,0 +1,65 @@
+.container {
+    display: grid;
+    grid-template-areas: "num7 num8 num9 multiplication"
+    "num4 num5 num6 subtraction"
+    "num1 num2 num3 addition"
+    "num0 " ;
+}
+
+.num7 {
+    grid-area: num7;
+}
+
+.num8 {
+    grid-area: num8;
+}
+
+.num9 {
+    grid-area: num9;
+}
+
+.num4 {
+    grid-area: num4;
+}
+
+.num5 {
+    grid-area: num5;
+}
+
+.num6 {
+    grid-area: num6;
+}
+
+.num1 {
+    grid-area: num1;
+}
+
+.num2 {
+    grid-area: num2;
+}
+
+.num3 {
+    grid-area: num3;
+}
+
+.num0 {
+    grid-area: num0;
+}
+
+.add {
+    grid-area: addition;
+}
+
+.subtract {
+    grid-area: subtraction;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.multiply {
+    grid-area: multiplication;
+}
+
+
