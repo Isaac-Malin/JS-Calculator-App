@@ -1,65 +1,113 @@
-.container {
-    display: grid;
-    grid-template-areas: "num7 num8 num9 multiplication"
-    "num4 num5 num6 subtraction"
-    "num1 num2 num3 addition"
-    "num0 " ;
+* {
+    margin: 10px;
+    padding: 10px;
+    background-color: salmon;
 }
 
-.num7 {
+
+.container {
+    display: grid;
+    grid-template-areas: "display display display display"
+    "display display display display"
+    "display display display display"
+    "display display display display"
+    "display display display display"
+    "display display display display"
+    "display display display display"
+    "AC AC divide multiplication"
+    "num7 num8 num9 subtraction"
+    "num4 num5 num6 addition"
+    "num1 num2 num3 equals"
+    "num0 num0 dots equals" 
+    ;
+    background-color: #0d0c22;
+    height: 80vh;
+}
+
+.operator {
+    background-color: lightgrey;
+    color: #0d0c22;
+    border: 2px solid #0d0c22;
+}
+
+button {
+    background-color: #0d0c22;
+    color: white;
+    font-size: 25px;
+    background-color: #0d0c60;
+    border: 2px solid #0d0c60;
+}
+
+#num7 {
     grid-area: num7;
 }
 
-.num8 {
+#num8 {
     grid-area: num8;
 }
 
-.num9 {
+#num9 {
     grid-area: num9;
 }
 
-.num4 {
+#num4 {
     grid-area: num4;
 }
 
-.num5 {
+#num5 {
     grid-area: num5;
 }
 
-.num6 {
+#num6 {
     grid-area: num6;
 }
 
-.num1 {
+#num1 {
     grid-area: num1;
 }
 
-.num2 {
+#num2 {
     grid-area: num2;
 }
 
-.num3 {
+#num3 {
     grid-area: num3;
 }
 
-.num0 {
+#num0 {
     grid-area: num0;
 }
 
-.add {
+#reset {
+    grid-area: AC;
+}
+
+#decimal {
+    grid-area: dots;
+}
+
+#add {
     grid-area: addition;
 }
 
-.subtract {
+#subtract {
     grid-area: subtraction;
 }
 
-.divide {
+#divide {
     grid-area: divide;
 }
 
-.multiply {
+#multiply {
     grid-area: multiplication;
+}
+
+#equals {
+    grid-area: equals;
+}
+
+.display {
+    grid-area: display;
 }
 
 
