@@ -8,26 +8,34 @@
     <title>Calculator</title>
   </head>
   <body>
-    <div class="main-page">
-      <div class="container">
-        <div class="display"></div>
-        <input id="num7" type="button" value="7" onclick="display('7')"></input>
-        <input id="num8" type="button" value="8" onclick="display('8')"></input>
-        <input id="num9" type="button" value="9" onclick="display('9')"></input>
-        <input id="num4" type="button" value="4" onclick="display('4')"></input>
-        <input id="num5" type="button" value="5" onclick="display('5')"></input>
-        <input id="num6" type="button" value="6" onclick="display('6')"></input>
-        <input id="num1" type="button" value="1" onclick="display('1')"></input>
-        <input id="num2" type="button" value="2" onclick="display('2')"></input>
-        <input id="num3" type="button" value="3" onclick="display('3')"></input>
-        <input id="num0" type="button" value="0" onclick="display('0')"></input>
-        <input id="equals" type="button" value="=" onclick="display('=')"></input>
-        <input id="add" type="button" value="+" onclick="display('+')"></input>
-        <input id="subtract" type="button" value="-" onclick="display('-')"></input>
-        <input id="divide" type="button" value="/" onclick="display('/')"></input>
-        <input id="multiply" type="button" value="*" onclick="display('*')"></input>
-        <input id="decimal" type="button" value="." onclick="display('.')"></input>
-        <input id="reset" type="button" value="AC" onclick="display('')"></input>
+    <div class="container">
+      <div class="calculator">
+        <div class="dispaly">
+          <div data-previous-operand class="previous_operand"></div>
+          <div data-current-operand class="current_operand"></div>
+        </div>
+
+        <div class="calculator_keys">
+          <button data-number id="num7">7</button>
+          <button data-number id="num8">8</button>
+          <button data-number id="num9">9</button>
+          <button data-number id="num4">4</button>
+          <button data-number id="num5">5</button>
+          <button data-number id="num6">6</button>
+          <button data-number id="num1">1</button>
+          <button data-number id="num2">2</button>
+          <button data-number id="num3">3</button>
+          <button data-number id="num0">0</button>
+          <button data-equals id="equals">
+            =
+          </button>
+          <button data-operation >+</button>
+          <button data-operation>-</button>
+          <button data-operation>/</button>
+          <button data-operation>*</button>
+          <button data-number id="dot">.</button>
+          <button data-all-clear id="reset">AC</button>
+        </div>
       </div>
     </div>
     <script src="./script.js"></script>

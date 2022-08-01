@@ -1,53 +1,41 @@
-* {
-    margin: 10px;
-    padding: 10px;
-    background-color: #ADD8E6;
-}
-
-.main-page {
-    display: grid;
-    justify-content: center;
+body {
+    background: linear-gradient(to right, #ADD8E6, #0d0c22);
 }
 
 .container {
     display: grid;
-    grid-template-areas: "display display display display"
-    "display display display display"
-    "display display display display"
-    "display display display display"
-    "display display display display"
-    "display display display display"
-    "display display display display"
+    justify-content: center;
+}
+
+.calculator_keys {
+    display: grid;
+    grid-template-areas:
     "AC AC divide multiplication"
     "num7 num8 num9 subtraction"
     "num4 num5 num6 addition"
     "num1 num2 num3 equals"
     "num0 num0 dots equals" 
     ;
-    background-color: #0d0c22;
-    height: 80vh;
-    width: 30vw;
-    border-radius: 15px;
+    background-color: black;
+    height: 60vh;
+    width: 23vw;
 }
 
-.operator {
-    background-color: lightgrey;
-    color: #0d0c22;
-    border: 2px solid #0d0c22;
-}
-
-input {
-    background-color: #0d0c22;
+button {
     color: white;
     font-size: 25px;
     background-color: #0d0c60;
     border: 2px solid #0d0c60;
-    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100px;
 }
 
-input:hover {
+
+button:hover {
     background-color: #ADD8E6;
     color: #0d0c22;
+    cursor: pointer;
 }
 
 #num7 {
@@ -92,9 +80,11 @@ input:hover {
 
 #reset {
     grid-area: AC;
+    background-color: #ADD8E6;
+    color: #0d0c60;
 }
 
-#decimal {
+#dot {
     grid-area: dots;
 }
 
@@ -116,10 +106,46 @@ input:hover {
 
 #equals {
     grid-area: equals;
+    background-color: #ADD8E6;
+    color: #0d0c60;
+}
+
+#equals:hover, #reset:hover {
+    background-color: #0d0c60;
+    color: white;
 }
 
 .display {
-    grid-area: display;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    border-radius: 5px;
+    overflow-wrap: break-word;
 }
 
+
+.calculator {
+    display: grid;
+    margin: 150px;
+
+}
+
+.current_operand, .previous_operand {
+    display: flex;
+    justify-content: end;
+    align-content: space-around;
+    background-color: black;
+    color: white;
+    height: 5vh;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.current_operand {
+    font-size: 3em;
+}
+
+.previous_operand {
+    font-size: 1.5em;
+}
 
