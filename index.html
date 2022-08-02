@@ -10,31 +10,25 @@
   <body>
     <div class="container">
       <div class="calculator">
-        <div class="dispaly">
-          <div data-previous-operand class="previous_operand"></div>
-          <div data-current-operand class="current_operand"></div>
-        </div>
-
+        <div class="display">0</div>
         <div class="calculator_keys">
-          <button data-number id="num7">7</button>
-          <button data-number id="num8">8</button>
-          <button data-number id="num9">9</button>
-          <button data-number id="num4">4</button>
-          <button data-number id="num5">5</button>
-          <button data-number id="num6">6</button>
-          <button data-number id="num1">1</button>
-          <button data-number id="num2">2</button>
-          <button data-number id="num3">3</button>
-          <button data-number id="num0">0</button>
-          <button data-equals id="equals">
-            =
-          </button>
-          <button data-operation >+</button>
-          <button data-operation>-</button>
-          <button data-operation>/</button>
-          <button data-operation>*</button>
-          <button data-number id="dot">.</button>
-          <button data-all-clear id="reset">AC</button>
+          <button class="seven" data-type="number">7</button>
+          <button class="eight" data-type="number">8</button>
+          <button class="nine" data-type="number">9</button>
+          <button class="four" data-type="number">4</button>
+          <button class="five" data-type="number">5</button>
+          <button class="six" data-type="number">6</button>
+          <button class="one" data-type="number">1</button>
+          <button class="two" data-type="number">2</button>
+          <button class="three" data-type="number">3</button>
+          <button class="zero" data-type="number">0</button>
+          <button class="equal" data-type="equal">=</button>
+          <button data-key="plus" data-type="operator">+</button>
+          <button data-key="minus" data-type="operator">-</button>
+          <button data-key="divide" data-type="operator">/</button>
+          <button data-key="times" data-type="operator">&times;</button>
+          <button class="number-decimal" data-type="decimal">.</button>
+          <button class="number-clear" data-type="clear">AC</button>
         </div>
       </div>
     </div>

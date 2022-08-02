@@ -1,5 +1,17 @@
+
 body {
     background: linear-gradient(to right, #ADD8E6, #0d0c22);
+}
+
+.display {
+    display: grid;
+    justify-content: right;
+    background-color:black;
+    color: white;
+    height: 8vh;
+    font-size: 3em;
+    align-content: center;
+    padding: 10px;
 }
 
 .container {
@@ -21,6 +33,7 @@ body {
     width: 23vw;
 }
 
+
 button {
     color: white;
     font-size: 25px;
@@ -31,6 +44,10 @@ button {
     border-radius: 100px;
 }
 
+button:active {
+    background-color: white;
+}
+
 
 button:hover {
     background-color: #ADD8E6;
@@ -38,89 +55,81 @@ button:hover {
     cursor: pointer;
 }
 
-#num7 {
+.seven {
     grid-area: num7;
 }
 
-#num8 {
+.eight {
     grid-area: num8;
 }
 
-#num9 {
+.nine {
     grid-area: num9;
 }
 
-#num4 {
+.four {
     grid-area: num4;
 }
 
-#num5 {
+.five {
     grid-area: num5;
 }
 
-#num6 {
+.six {
     grid-area: num6;
 }
 
-#num1 {
+.one {
     grid-area: num1;
 }
 
-#num2 {
+.two {
     grid-area: num2;
 }
 
-#num3 {
+.three {
     grid-area: num3;
 }
 
-#num0 {
+.zero {
     grid-area: num0;
 }
 
-#reset {
+.number-clear {
     grid-area: AC;
     background-color: #ADD8E6;
     color: #0d0c60;
 }
 
-#dot {
+.number-decimal {
     grid-area: dots;
 }
 
-#add {
+.plus {
     grid-area: addition;
 }
 
-#subtract {
+.minus {
     grid-area: subtraction;
 }
 
-#divide {
+.divide {
     grid-area: divide;
 }
 
-#multiply {
+.times {
     grid-area: multiplication;
 }
 
-#equals {
+.equal {
     grid-area: equals;
     background-color: #ADD8E6;
     color: #0d0c60;
 }
 
-#equals:hover, #reset:hover {
+.equal:hover, .number-clear:hover {
     background-color: #0d0c60;
     color: white;
-}
-
-.display {
-    padding: 0px;
-    margin: 0px;
-    background-color: black;
-    border-radius: 5px;
-    overflow-wrap: break-word;
 }
 
 
@@ -130,22 +139,9 @@ button:hover {
 
 }
 
-.current_operand, .previous_operand {
-    display: flex;
-    justify-content: end;
-    align-content: space-around;
-    background-color: black;
-    color: white;
-    height: 5vh;
-    padding: 10px;
-    overflow-wrap: break-word;
-}
-
-.current_operand {
-    font-size: 3em;
-}
-
-.previous_operand {
-    font-size: 1.5em;
+[data-state='selected'] {
+    background-color: white;
+    transition: 0.3s;
+    color: black;
 }
 
