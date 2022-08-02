@@ -1,13 +1,14 @@
 
+
 body {
-    background: linear-gradient(to right, #ADD8E6, #0d0c22);
+    background: linear-gradient(to right, #00203FFF, #ADEFD1FF);
 }
 
 .display {
     display: grid;
     justify-content: right;
-    background-color:black;
-    color: white;
+    background-color: white;
+    color: black;
     height: 8vh;
     font-size: 3em;
     align-content: center;
@@ -28,20 +29,18 @@ body {
     "num1 num2 num3 equals"
     "num0 num0 dots equals" 
     ;
-    background-color: black;
+    gap: 5px;
+    background-color: white;
     height: 60vh;
     width: 23vw;
 }
 
 
 button {
-    color: white;
+    color: black;
     font-size: 25px;
-    background-color: #0d0c60;
-    border: 2px solid #0d0c60;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 100px;
+    background-color: #ADEFD1FF;
+    border: none;
 }
 
 button:active {
@@ -50,8 +49,7 @@ button:active {
 
 
 button:hover {
-    background-color: #ADD8E6;
-    color: #0d0c22;
+    background: linear-gradient(to right, #00203FFF, #ADEFD1FF);
     cursor: pointer;
 }
 
@@ -97,8 +95,8 @@ button:hover {
 
 .number-clear {
     grid-area: AC;
-    background-color: #ADD8E6;
-    color: #0d0c60;
+    background-color: #00203FFF;
+    color: white;
 }
 
 .number-decimal {
@@ -123,14 +121,10 @@ button:hover {
 
 .equal {
     grid-area: equals;
-    background-color: #ADD8E6;
-    color: #0d0c60;
-}
-
-.equal:hover, .number-clear:hover {
-    background-color: #0d0c60;
+    background-color: #00203FFF;
     color: white;
 }
+
 
 
 .calculator {
@@ -140,7 +134,7 @@ button:hover {
 }
 
 [data-state='selected'] {
-    background-color: white;
+    background: linear-gradient(to right, #00203FFF, #ADEFD1FF);
     transition: 0.3s;
     color: black;
 }
